@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neo4j & Service Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+        }
+        
+        /* 左侧容器占60% */
+        .left-pane {
+            flex: 6;
+            height: 100vh;
+            border-right: 2px solid #ccc;
+        }
+        
+        /* 右侧容器占40% */
+        .right-pane {
+            flex: 4;
+            height: 100vh;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-pane">
+        <iframe src="http://localhost:7475"></iframe>
+    </div>
+    
+    <div class="right-pane">
+        <iframe src="http://localhost:8080/map.html"></iframe>
+    </div>
+</body>
+</html>
